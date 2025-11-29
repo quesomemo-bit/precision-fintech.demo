@@ -30,3 +30,13 @@ export interface Deal {
   createdAt: string;
   updatedAt: string;
 }
+
+export interface User {
+  id: string;
+  email: string;
+  password: string;
+  role: 'investor' | 'admin';
+  name: string;
+  createdAt: string;
+  watchlist?: string[];
+}
