@@ -18,10 +18,10 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en">
-      <body className={`${inter.className} bg-graphite-950 text-graphite-100`}>
-        <div className="min-h-screen flex flex-col">
+      <body className={inter.className}>
+        <div className="min-h-screen bg-graphite-950 text-graphite-100">
           <Header />
-          <main className="flex-1 max-w-6xl mx-auto px-4 py-8">{children}</main>
+          <main className="max-w-6xl mx-auto px-4 py-8">{children}</main>
         </div>
       </body>
     </html>
